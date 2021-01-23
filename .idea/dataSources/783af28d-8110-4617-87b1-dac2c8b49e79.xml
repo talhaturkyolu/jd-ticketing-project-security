@@ -948,6 +948,7 @@ sequence|table|29977|29979|1
     </sequence>
     <table id="32" parent="15" name="projects">
       <ObjectId>29949</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>6753</StateNumber>
     </table>
@@ -958,6 +959,7 @@ sequence|table|29977|29979|1
     </table>
     <table id="34" parent="15" name="tasks">
       <ObjectId>29968</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>6754</StateNumber>
     </table>
