@@ -13,7 +13,7 @@ import java.util.Set;
 
 @Configuration
 public class AuthSuccessHandler implements AuthenticationSuccessHandler {
-//
+
     @Override
     public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
 

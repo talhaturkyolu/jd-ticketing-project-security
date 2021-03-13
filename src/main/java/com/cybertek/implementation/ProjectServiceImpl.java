@@ -87,7 +87,6 @@ public class ProjectServiceImpl implements ProjectService {
     public List<ProjectDTO> listAllProjectDetails() {
 
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
-
         UserDTO currentUserDTO = userService.findByUserName(username);
         User user = userMapper.convertToEntity(currentUserDTO);
         List<Project> list = projectRepository.findAllByAssignedManager(user);
@@ -112,9 +111,24 @@ public class ProjectServiceImpl implements ProjectService {
     @Override
     public List<ProjectDTO> listAllNonCompletedProjects() {
 
-        return  projectRepository.findAllByProjectStatusIsNot(Status.COMPLETE)
+        return projectRepository.findAllByProjectStatusIsNot(Status.COMPLETE)
                 .stream()
                 .map(project -> projectMapper.convertToDto(project))
                 .collect(Collectors.toList());
-    }
+        }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

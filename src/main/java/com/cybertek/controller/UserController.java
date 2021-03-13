@@ -28,6 +28,7 @@ public class UserController {
         model.addAttribute("roles",roleService.listAllRoles());
         model.addAttribute("users",userService.listAllUsers());
         return "/user/create";
+//        return "/user/create";
     }
 
     @PostMapping("/create")

@@ -32,4 +32,6 @@ public class BaseEntity {
 
     private Boolean isDeleted=false;
 
+
+
 }
